@@ -3,6 +3,12 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase para crear contactos.
+ * @author alejandro
+ * @version 1.0
+ */
+
 class Contacto {
     private String name;
     private List<String> phones;

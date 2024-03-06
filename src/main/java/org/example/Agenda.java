@@ -2,6 +2,11 @@ package org.example;
 
 import java.util.*;
 
+/**
+ * Clase para almacenar los contactos en la agenda
+ * @author Alejandro
+ * @version 1.0
+ */
 public class Agenda {
     private List<Contacto> contacts; // Lista de Contacto
 
@@ -9,6 +14,12 @@ public class Agenda {
         this.contacts = new ArrayList<>();
     }
 
+    /**
+     * Tenemos dos parámetros, nombre y número de teléfono.
+     * Si añadimos nombre que ya existe nos pedirá número de teléfono.
+     * @param name
+     * @param phone
+     */
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Contacto c : contacts) {
